@@ -15,16 +15,16 @@ libs\AceDB-3.0\AceDB-3.0.xml
 libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
 libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 
-Localization.enUS.lua
-Localization.deDE.lua
+IlarosNavi_Loc.enUS.lua
+IlarosNavi_Loc.deDE.lua
 
 IlarosNavi.lua
 IlarosNavi_Waypoints.lua
-IlarosNavi_CrazyArrow.lua
+IlarosNavi_Arrow.lua
 IlarosNavi_Corpse.lua
-IlarosNavi_POIIntegration.lua
+IlarosNavi_POI.lua
 
 IlarosNavi_Config.lua
 
-MapCoords.lua
-MapCoords.xml
+IlarosNavi_Coords.lua
+IlarosNavi_Coords.xml

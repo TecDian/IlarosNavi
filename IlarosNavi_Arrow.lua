@@ -1,14 +1,14 @@
---[[--------------------------------------------------------------------------
---  IlarosNavi - A navigational assistant for World of Warcraft
--- 
---  CrazyTaxi: A crazy-taxi style arrow used for waypoint navigation.
---    concept taken from MapNotes2 (Thanks to Mery for the idea, along
---    with the artwork.)
-----------------------------------------------------------------------------]]
+----------------------------------------------------------------------------
+-- IlarosNavi
+-- Modul für die Zielpfeilverwaltung
+----------------------------------------------------------------------------
 
-local Astrolabe = DongleStub("Astrolabe-0.4")
-local sformat = string.format
+-- Einfache Lokalisierungstabelle für Texte
 local L = IlarosNaviLocals
+-- Icondarstellung auf den Karten
+local Astrolabe = DongleStub("Astrolabe-0.4")
+
+local sformat = string.format
 local ldb = LibStub("LibDataBroker-1.1")
 
 local function ColorGradient(perc, ...)
@@ -287,7 +287,11 @@ local dropdown_info = {
 			text = L["Remove waypoint"],
 			func = function()
 				local uid = active_point
+				local waypoints = IlarosNavi.waypoints
+                local data = waypoints[uid]
 				IlarosNavi:RemoveWaypoint(uid)
+                local msg = string.format(NaviText_WPUnset, data.title and "'"..data.title.."' " or "", data.x, data.y, data.zone)
+                NaviText_Echo(msg)
 			end,
 		},
 		{
@@ -300,6 +304,7 @@ local dropdown_info = {
 				for uid in pairs(waypoints[data.zone]) do
 					IlarosNavi:RemoveWaypoint(uid)
 				end
+                NaviText_Echo(NaviText_WPUnsetZone:format(data.zone))
 			end,
 		},
 		{

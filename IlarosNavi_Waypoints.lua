@@ -1,14 +1,9 @@
---[[--------------------------------------------------------------------------
---  IlarosNavi - A navigational assistant for World of Warcraft
---
---  This file contains the internal implementation of IlarosNavi's waypoints.
---  None of these functions should be called directly by addons if they want
---  the waypoints to obey normal IlarosNavi options and behavior.  In otherwords
---  don't call IlarosNavi:SetWaypoint() or IlarosNavi:ClearWaypoint(), use the public
---  IlarosNavi:AddZWaypoint() and IlarosNavi:RemoveWaypoint() instead.
-----------------------------------------------------------------------------]]
+----------------------------------------------------------------------------
+-- IlarosNavi
+-- Modul für die Zielpunktverwaltung
+----------------------------------------------------------------------------
 
--- Import Astrolabe for locations
+-- Icondarstellung auf den Karten
 local Astrolabe = DongleStub("Astrolabe-0.4")
 
 -- Create a tooltip to be used when mousing over waypoints

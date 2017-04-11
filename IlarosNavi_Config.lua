@@ -1,3 +1,9 @@
+----------------------------------------------------------------------------
+-- IlarosNavi
+-- Modul für das Optionsfenster
+----------------------------------------------------------------------------
+
+-- Einfache Lokalisierungstabelle für Texte
 local L = IlarosNaviLocals
 
 local function createconfig()

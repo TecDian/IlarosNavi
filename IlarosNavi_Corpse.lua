@@ -1,10 +1,11 @@
---[[-------------------------------------------------------------------------
---  Simple module for IlarosNavi that creates a waypoint for your corse
---  if you happen to die.  No humor, no frills, just straightforward
---  corpse arrow.  Based on code written and adapted by Yssarill.
--------------------------------------------------------------------------]]--
+----------------------------------------------------------------------------
+-- IlarosNavi
+-- Modul für Leichen-Zielpunkte
+----------------------------------------------------------------------------
 
+-- Einfache Lokalisierungstabelle für Texte
 local L = IlarosNaviLocals
+
 local eventFrame = CreateFrame("Frame")
 eventFrame:RegisterEvent("ADDON_LOADED")
 eventFrame:RegisterEvent("PLAYER_ALIVE")

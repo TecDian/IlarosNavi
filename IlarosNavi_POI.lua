@@ -1,3 +1,8 @@
+----------------------------------------------------------------------------
+-- IlarosNavi
+-- Modul für die POI-Integration
+----------------------------------------------------------------------------
+
 local hookEnabled = true;
 local modifier;
 local watchframeHookEnabled = false;

@@ -500,7 +500,7 @@ local function handle(info, inputpos, tab, depth, retfalse)
 			local b = callmethod(info, inputpos, tab, "get")
 			local fmt = "|cffffff78- [%s]|r %s"
 			local fmt_sel = "|cffffff78- [%s]|r %s |cffff0000*|r"
-			print(L["Options for |cffffff78"]..info[#info].."|r:")
+			print(L["Options for |cffffff78"..info[#info].."|r:"])
 			for k, v in pairs(values) do
 				if b == k then
 					print(fmt_sel:format(k, v))
@@ -540,7 +540,7 @@ local function handle(info, inputpos, tab, depth, retfalse)
 		if str == "" then
 			local fmt = "|cffffff78- [%s]|r %s"
 			local fmt_sel = "|cffffff78- [%s]|r %s |cffff0000*|r"
-			print(L["Options for |cffffff78"]..info[#info]..L["|r (multiple possible):"])
+			print(L["Options for |cffffff78"..info[#info].."|r (multiple possible):"])
 			for k, v in pairs(values) do
 				if callmethod(info, inputpos, tab, "get", k) then
 					print(fmt_sel:format(k, v))
