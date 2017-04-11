@@ -1,0 +1,32 @@
+## Interface: 30305
+## Title: IlarosNavi
+## Author: Ilaros
+## Version: 1.000
+## Notes: Navigation mit Koordinaten und Wegpunkten
+## SavedVariables: NaviPlay, NaviDB, NaviWaypoints
+
+libs\Astrolabe\Load.xml
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+libs\AceEvent-3.0\AceEvent-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+Localization.enUS.lua
+Localization.deDE.lua
+Localization.ruRU.lua
+
+IlarosNavi.lua
+IlarosNavi_Waypoints.lua
+IlarosNavi_CrazyArrow.lua
+IlarosNavi_Corpse.lua
+IlarosNavi_POIIntegration.lua
+
+IlarosNavi_Config.lua
+
+MapCoords.lua
+Localization.lua
+MapCoords.xml
