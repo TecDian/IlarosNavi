@@ -126,7 +126,7 @@ local function updateClosestPOI()
         end			
 
         if filterOK then
-            -- Set a waypoint for this POI, it should be the higehst
+            -- Set a waypoint for this POI, it should be the highest
             local questFrame = findQuestFrameFromQuestIndex(questID)
             if questFrame then
                 for idx, uid in ipairs(setPoints) do

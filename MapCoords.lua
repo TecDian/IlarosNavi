@@ -1,54 +1,19 @@
--- **************************
--- Coded By ReCover
--- ***
--- Useable color codes:
--- |cff00ff00 = gr�n/green
+-- benutzbare Farbcodes:
+-- |cff00ff00 = grün/green
 -- |cffff0000 = rot/red
 -- |cff00ffff = hellblau/light blue
 -- |cff0055FF = blau/blue
--- ***
--- Changelog:
--- 0.7 by Jim-Bim
--- - TOC Update for 3.3
--- - Fixed cursor coords for new map modes
--- 0.6 by Jim-Bim
--- - TOC Update for 3.2
--- 0.5 by Jim-Bim
--- - Added french localization (thanks to Mordroba!)
--- 0.4 by Jim-Bim
--- - TOC Update for 3.1
--- - Localization added (english/german for now)
--- - >>Feel free to contribute additional languages<<
--- - New GUI - Now easier to configure settings
--- - Option to toggle decimals added
--- - Some simple internal code optimations
--- 0.33
--- - Update to show decimals by Svarv, TOC Update for 3.0
--- 0.32
--- - TOC Update (by Urmelus) for 1.12, 2.0, 2.1, 2.2, 2.3, 2.4
--- - Added German tootip in Addon overview
--- 0.31:
--- - TOC Update (by Urmelus) for 1.11
--- 0.3:
--- - Slash commands (/navi)
--- - Saving settings variable (MapCoords)
--- - Coords below your portraite and your party members portraite (Not able to get it if member is in another zone, workaround anyone?)
--- - Able to toggle all labels (using slash commands)
--- - Added function round to round the numbers instead of stripping them from their decimals
--- - Updated toc to patch 1.3.1
--- 0.2:
--- - Kickass fix made by Astus so cursor coords is accurate out-of-the-box =)
--- 0.1:
--- - Made the AddOn
--- **************************
 
--- Master echo colors
+-- Signalfarben
+-- grün: an
 local R_ON = 0
 local G_ON = 1
 local B_ON = 0
+-- rot: aus
 local R_OFF = 1
 local G_OFF = 0
 local B_OFF = 0
+-- gelb: Version
 local R_ABOUT = 1
 local G_ABOUT = 1
 local B_ABOUT = 0
@@ -117,7 +82,7 @@ function MapCoords_Echo(msg,r,g,b)
 end
 
 function MapCoords_SlashCommand(msg)
-	-- WorldMap
+	-- Weltkarte
 	if (string.lower(msg) == "a") then
 		if (NaviPlay["worldmap cursor"] == true and NaviPlay["worldmap player"] == true) then
 			NaviPlay["worldmap cursor"]=false
@@ -144,7 +109,7 @@ function MapCoords_SlashCommand(msg)
 			NaviPlay["worldmap player"]=true
 			MapCoords_Echo(MAPCOORDS_SWPlayer)
 		end
-	-- Portrait
+	-- Portraits
 	elseif (string.lower(msg) == "p") then
 		if (NaviPlay["portrait player"] == true and
 		NaviPlay["portrait party1"] == true and
@@ -222,6 +187,7 @@ function MapCoords_SlashCommand(msg)
 			NaviPlay["portrait party4"]=true
 			MapCoords_Echo(MAPCOORDS_SParty4)
 		end
+    -- alles andere
 	elseif (string.lower(msg) == "v") then
         SlashCmdList["IlarosNavi_VERSION"](msg)
 	elseif (string.lower(msg) == "h") then
@@ -377,7 +343,7 @@ function MapCoordsWorldMap_OnUpdate()
 end
 
 function MapCoordsBlizzardOptions()
--- Create main frame for information text
+-- Hauptrahmen für Informationstext erzeugen
 local MapCoordsOptions = CreateFrame("FRAME", "MapCoordsOptions")
 MapCoordsOptions:SetScript("OnShow", function(self) MapCoordsSetCheckButtonState() end)
 MapCoordsOptions.name = "IlarosNavi"

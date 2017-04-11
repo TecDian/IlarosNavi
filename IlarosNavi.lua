@@ -1,6 +1,6 @@
---[[--------------------------------------------------------------------------
---  IlarosNavi by Cladhaire <cladhaire@gmail.com>
-----------------------------------------------------------------------------]]
+----------------------------------------------------------------------------
+--  IlarosNavi
+----------------------------------------------------------------------------
 
 -- Simple localization table for messages
 local L = IlarosNaviLocals
@@ -24,8 +24,6 @@ IlarosNavi = {
 	end,
 	version = GetAddOnMetadata("IlarosNavi", "Version")
 }
-
-if IlarosNavi.version == "wowi:revision" then IlarosNavi.version = "SVN" end
 
 IlarosNavi.eventFrame:SetScript("OnEvent", function(self, event, ...)
 	local method = IlarosNavi.events[event]
@@ -1039,7 +1037,7 @@ SLASH_IlarosNavi_VERSION1 = "/NaviV"
 SLASH_IlarosNavi_VERSION2 = "/NaviVersion"
 SlashCmdList["IlarosNavi_VERSION"] = function(msg)
     ChatFrame1:AddMessage(L["|cffffff00IlarosNavi f\195\188r Tec's Ilaros WoW|r"])
-    ChatFrame1:AddMessage(L["|cffffff00Version 1.000|r"])
+    ChatFrame1:AddMessage(L["|cffffff00Version "]..IlarosNavi.version.."|r")
 end
 
 SLASH_IlarosNavi_WAY1 = "/NaviZ"

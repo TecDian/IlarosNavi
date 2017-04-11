@@ -1,7 +1,7 @@
 ## Interface: 30305
 ## Title: IlarosNavi
 ## Author: Ilaros
-## Version: 1.000
+## Version: 1.001
 ## Notes: Navigation mit Koordinaten und Wegpunkten
 ## SavedVariables: NaviPlay, NaviDB, NaviWaypoints
 
@@ -17,7 +17,6 @@ libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 
 Localization.enUS.lua
 Localization.deDE.lua
-Localization.ruRU.lua
 
 IlarosNavi.lua
 IlarosNavi_Waypoints.lua
@@ -28,5 +27,4 @@ IlarosNavi_POIIntegration.lua
 IlarosNavi_Config.lua
 
 MapCoords.lua
-Localization.lua
 MapCoords.xml
