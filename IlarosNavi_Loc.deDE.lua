@@ -61,7 +61,6 @@ IlarosNaviLocals = {
     ["Font size"] = "Schriftgr\195\182\195\159e",
     ["Found %d possible matches for zone %s.  Please be more specific"] = "%d m\195\182gliche Ziele f\195\188r Zone %s gefunden. Sei bitte genauer",
     ["Found multiple matches for zone '%s'.  Did you mean: %s"] = "Mehrere Ziele f\195\188r Zone '%s' gefunden. Meintest du: %s",
-    ["General Options"] = "Allgemeine Einstellungen",
     ["Good color"] = "korrekte Richtung",
     ["IlarosNavi"] = "IlarosNavi",
     ["IlarosNavi can announce new waypoints to the default chat frame when they are added"] = "IlarosNavi kann neue Zielpunkte an den Standard-Chat senden, wenn sie hinzugef\195\188gt werden.",
@@ -179,37 +178,40 @@ IlarosNaviLocals = {
 
 }
 
--- Chat-Benachrichtigungen
-NaviText_HWorld      = "|cffffff78IlarosNavi:|r Alle Weltkartenkoordinaten wurden ausgeblendet."
-NaviText_SWorld      = "|cffffff78IlarosNavi:|r Alle Weltkartenkoordinaten wurden eingeblendet."
-NaviText_HCursor     = "|cffffff78IlarosNavi:|r Cursorkoordinaten auf der Weltkarte wurden ausgeblendet."
-NaviText_SCursor     = "|cffffff78IlarosNavi:|r Cursorkoordinaten auf der Weltkarte wurden eingeblendet."
-NaviText_HWPlayer    = "|cffffff78IlarosNavi:|r Spielerkoordinaten auf der Weltkarte wurden ausgeblendet."
-NaviText_SWPlayer    = "|cffffff78IlarosNavi:|r Spielerkoordinaten auf der Weltkarte wurden eingeblendet."
-NaviText_HPortrait   = "|cffffff78IlarosNavi:|r Alle Portraitkoordinaten wurden ausgeblendet."
-NaviText_SPortrait   = "|cffffff78IlarosNavi:|r Alle Portraitkoordinaten wurden eingeblendet."
-NaviText_HAParty     = "|cffffff78IlarosNavi:|r Alle Gruppenportraitkoordinaten wurden ausgeblendet."
-NaviText_SAParty     = "|cffffff78IlarosNavi:|r Alle Gruppenportraitkoordinaten wurden eingeblendet."
-NaviText_HPlayer     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des Spielers wurden ausgeblendet."
-NaviText_SPlayer     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des Spielers wurden eingeblendet."
-NaviText_HParty1     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des ersten Mitspielers wurden ausgeblendet."
-NaviText_SParty1     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des ersten Mitspielers wurden eingeblendet."
-NaviText_HParty2     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des zweiten Mitspielers wurden ausgeblendet."
-NaviText_SParty2     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des zweiten Mitspielers wurden eingeblendet."
-NaviText_HParty3     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des dritten Mitspielers wurden ausgeblendet."
-NaviText_SParty3     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des dritten Mitspielers wurden eingeblendet."
-NaviText_HParty4     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des vierten Mitspielers wurden ausgeblendet."
-NaviText_SParty4     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des vierten Mitspielers wurden eingeblendet."
-NaviText_WPSet       = "|cffffff78IlarosNavi:|r Zielpunkt %sbei %s in %s gesetzt."
-NaviText_WPUnset     = "|cffffff78IlarosNavi:|r Zielpunkt %sbei %0.2f, %0.2f in %s gelöscht."
-NaviText_WPUnsetAll  = "|cffffff78IlarosNavi:|r Alle Zielpunkte gelöscht."
-NaviText_WPUnsetZone = "|cffffff78IlarosNavi:|r Alle Zielpunkte in %s gelöscht."
-NaviText_WPUnsetNo   = "|cffffff78IlarosNavi:|r Keine Zielpunkte in %s gefunden."
-NaviText_WPSent      = "|cffffff78IlarosNavi:|r Zielpunkt '%s' in Zone %s wurde von %s gesendet."
+    -- Chat-Benachrichtigungen
+    NaviText_FName       = "|cffffff00IlarosNavi für Tec's Ilaros WoW|r"
+    NaviText_FVer        = "|cffffff00Version %s|r"
+
+    NaviText_HWorld      = "|cffffff78IlarosNavi:|r Alle Weltkartenkoordinaten wurden ausgeblendet."
+    NaviText_SWorld      = "|cffffff78IlarosNavi:|r Alle Weltkartenkoordinaten wurden eingeblendet."
+    NaviText_HCursor     = "|cffffff78IlarosNavi:|r Cursorkoordinaten auf der Weltkarte wurden ausgeblendet."
+    NaviText_SCursor     = "|cffffff78IlarosNavi:|r Cursorkoordinaten auf der Weltkarte wurden eingeblendet."
+    NaviText_HWPlayer    = "|cffffff78IlarosNavi:|r Spielerkoordinaten auf der Weltkarte wurden ausgeblendet."
+    NaviText_SWPlayer    = "|cffffff78IlarosNavi:|r Spielerkoordinaten auf der Weltkarte wurden eingeblendet."
+    NaviText_HPortrait   = "|cffffff78IlarosNavi:|r Alle Portraitkoordinaten wurden ausgeblendet."
+    NaviText_SPortrait   = "|cffffff78IlarosNavi:|r Alle Portraitkoordinaten wurden eingeblendet."
+    NaviText_HAParty     = "|cffffff78IlarosNavi:|r Alle Gruppenportraitkoordinaten wurden ausgeblendet."
+    NaviText_SAParty     = "|cffffff78IlarosNavi:|r Alle Gruppenportraitkoordinaten wurden eingeblendet."
+    NaviText_HPlayer     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des Spielers wurden ausgeblendet."
+    NaviText_SPlayer     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des Spielers wurden eingeblendet."
+    NaviText_HParty1     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des ersten Mitspielers wurden ausgeblendet."
+    NaviText_SParty1     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des ersten Mitspielers wurden eingeblendet."
+    NaviText_HParty2     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des zweiten Mitspielers wurden ausgeblendet."
+    NaviText_SParty2     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des zweiten Mitspielers wurden eingeblendet."
+    NaviText_HParty3     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des dritten Mitspielers wurden ausgeblendet."
+    NaviText_SParty3     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des dritten Mitspielers wurden eingeblendet."
+    NaviText_HParty4     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des vierten Mitspielers wurden ausgeblendet."
+    NaviText_SParty4     = "|cffffff78IlarosNavi:|r Portraitkoordinaten des vierten Mitspielers wurden eingeblendet."
+    NaviText_WPSet       = "|cffffff78IlarosNavi:|r Zielpunkt %sbei %s in %s gesetzt."
+    NaviText_WPUnset     = "|cffffff78IlarosNavi:|r Zielpunkt %sbei %0.2f, %0.2f in %s gelöscht."
+    NaviText_WPUnsetAll  = "|cffffff78IlarosNavi:|r Alle Zielpunkte gelöscht."
+    NaviText_WPUnsetZone = "|cffffff78IlarosNavi:|r Alle Zielpunkte in %s gelöscht."
+    NaviText_WPUnsetNo   = "|cffffff78IlarosNavi:|r Keine Zielpunkte in %s gefunden."
+    NaviText_WPSent      = "|cffffff78IlarosNavi:|r Zielpunkt '%s' in Zone %s wurde von %s gesendet."
 
 
--- Slash information
-NaviText_SLASH1 = "|cffff38ffIlarosNavi-Kommandos:|r"
+    -- Chat-Hilfetexte
+    NaviText_SLASH1 = "|cffff38ffIlarosNavi-Kommandos:|r"
 NaviText_SLASH2 = "-- Weltkartenkoordinaten --"
 NaviText_SLASH3 = "-- Portraitkoordinaten --"
 NaviText_SLASH4 = "Cursor: "
@@ -237,26 +239,29 @@ NaviText_P3OFF  = "|cff78ffff/Navi p3|r - dritte Gruppenkoordinaten ein"
 NaviText_P4ON   = "|cff78ffff/Navi p4|r - vierte Gruppenkoordinaten aus"
 NaviText_P4OFF  = "|cff78ffff/Navi p4|r - vierte Gruppenkoordinaten ein"
 NaviText_VER    = "|cffffff78/Navi v|r - Versionsinformation"
-NaviText_OPT    = "|cffffff78/Navi o|r - Optionsfenster öffnen"
+NaviText_OPT    = "|cffffff78/Navi k|r - Konfigurationsfenster öffnen"
 NaviText_WAY1   = "|cffffff78/Navi n|r - Zielpfeil auf nächsten Zielpunkt richten"
-NaviText_WAY2   = "|cffffff78/Navi h|r - Zielpunkt am aktuellen Ort setzen"
-NaviText_WAY3   = "|cffffff78/Navi [zone] <x> <y> [name]|r - Zielpunkt bei x,y in Zone 'zone' mit Name 'name' setzen, Zone und Name sind optional"
+NaviText_WAY2   = "|cffffff78/Navi h|r - Zielpunkt am aktuellen Ort erzeugen"
+NaviText_WAY3   = "|cffffff78/Navi [zone] <x> <y> [name]|r - Zielpunkt bei x,y in Zone 'zone' mit Name 'name' erzeugen, Zone und Name sind optional"
 NaviText_WAY4   = "|cffffff78/Navi reset all|r - alle Zielpunkte l\195\182schen"
 NaviText_WAY5   = "|cffffff78/Navi reset <zone>|r - alle Zielpunkte in Zone 'zone' löschen"
 
--- Option texts
-NaviText_WMOP       = "Weltkarten-Koordinaten:"
-NaviText_WMOP1      = "Spielerkoordinaten anzeigen"
-NaviText_WMOP2      = "Cursoroordinaten anzeigen"
-NaviText_PTOP       = "Portraitkoordinaten:"
-NaviText_PTP        = "Koordinaten unter Spielerportrait anzeigen"
-NaviText_PTG1       = "Koordinaten f\195\188r Gruppenmitglied 1 anzeigen"
-NaviText_PTG2       = "Koordinaten f\195\188r Gruppenmitglied 2 anzeigen"
-NaviText_PTG3       = "Koordinaten f\195\188r Gruppenmitglied 3 anzeigen"
-NaviText_PTG4       = "Koordinaten f\195\188r Gruppenmitglied 4 anzeigen"
-NaviText_MOP        = "Genauigkeit:"
-NaviText_SDCD       = "Dezimalen der Koordinaten (gilt nicht f\195\188r Koordinatenbox)"
-NaviText_HINT      = "Im Chat eingeben:\n\n|cffffff78/Navi|r f\195\188r Slashkommandos\n|cffffff78/NaviO|r f\195\188r dieses Optionsfenster"
+    -- Konfigurationsfenster
+    -- Hauptfenster
+    NaviText_WMOP       = "Weltkarten-Koordinaten:"
+    NaviText_WMOP1      = "Spielerkoordinaten anzeigen"
+    NaviText_WMOP2      = "Cursoroordinaten anzeigen"
+    NaviText_PTOP       = "Portraitkoordinaten:"
+    NaviText_PTP        = "Koordinaten unter Spielerportrait anzeigen"
+    NaviText_PTG1       = "Koordinaten f\195\188r Gruppenmitglied 1 anzeigen"
+    NaviText_PTG2       = "Koordinaten f\195\188r Gruppenmitglied 2 anzeigen"
+    NaviText_PTG3       = "Koordinaten f\195\188r Gruppenmitglied 3 anzeigen"
+    NaviText_PTG4       = "Koordinaten f\195\188r Gruppenmitglied 4 anzeigen"
+    NaviText_MOP        = "Genauigkeit:"
+    NaviText_SDCD       = "Dezimale der Koordinaten (gilt nicht für Koordinatenbox)"
+    NaviText_HINT       = "Im Chat eingeben:\n\n|cffffff78/Navi|r für Kommando-Übersicht\n|cffffff78/Navi k|r für dieses Konfigurationsfenster"
+    -- allgemeine Einstellungen
+    NaviText_GOPT       = "Allgemeine Einstellungen"
 
 setmetatable(IlarosNaviLocals, {__index=function(t,k) rawset(t, k, k); return k; end})
 

@@ -137,8 +137,8 @@ function IlarosNavi:ADDON_LOADED(event, addon)
             },
         }
 
-        self.db = LibStub("AceDB-3.0"):New("NaviDB", self.defaults, "Default")
-        self.waydb = LibStub("AceDB-3.0"):New("NaviWaypoints", self.waydefaults)
+        self.db = LibStub("AceDB-3.0"):New("NaviConfig", self.defaults, "Default")
+        self.waydb = LibStub("AceDB-3.0"):New("NaviMarks", self.waydefaults)
 
         self.db.RegisterCallback(self, "OnProfileChanged", "ReloadOptions")
         self.db.RegisterCallback(self, "OnProfileCopied", "ReloadOptions")
@@ -679,7 +679,7 @@ end
 
 local function _both_ping_arrival(event, uid, range, distance, lastdistance)
     if IlarosNavi.profile.arrow.enablePing then
-        PlaySoundFile("Interface\\AddOns\\IlarosNavi\\Media\\ping.mp3")
+        PlaySoundFile("Interface\\AddOns\\IlarosNavi\\media\\ping.mp3")
     end
 end
 
@@ -1043,8 +1043,8 @@ end
 SLASH_IlarosNavi_VERSION1 = "/NaviV"
 SLASH_IlarosNavi_VERSION2 = "/NaviVersion"
 SlashCmdList["IlarosNavi_VERSION"] = function(msg)
-    NaviText_Echo(L["|cffffff00IlarosNavi f\195\188r Tec's Ilaros WoW|r"])
-    NaviText_Echo(L["|cffffff00Version "]..IlarosNavi.version.."|r")
+    NaviText_Echo(NaviText_FName)
+    NaviText_Echo(string.format(NaviText_FVer,IlarosNavi.version))
 end
 
 SLASH_IlarosNavi_WAY1 = "/NaviZ"

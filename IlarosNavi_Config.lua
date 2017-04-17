@@ -563,7 +563,7 @@ local function createconfig()
 	options.args.general = {
 		type = "group",
 		order = 1,
-		name = L["General Options"],
+		name = NaviText_GOPT,
 		get = get,
 		set = set,
 		args = {
@@ -760,8 +760,8 @@ local function createBlizzOptions()
 	return blizzPanel
 end
 
-SLASH_IlarosNavi1 = "/NaviO"
-SLASH_IlarosNavi2 = "/NaviOptionen"
+SLASH_IlarosNavi1 = "/NaviK"
+SLASH_IlarosNavi2 = "/NaviKonfiguration"
 local blizzPanel
 SlashCmdList["IlarosNavi"] = function(msg)
 	if not registered then

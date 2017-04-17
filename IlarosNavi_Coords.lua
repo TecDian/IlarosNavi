@@ -187,7 +187,7 @@ function NaviText_SlashCommand(msg)
             NaviText_Echo(NaviText_SParty4,R_ON,G_ON,B_ON)
         end
     -- alles andere
-    elseif (string.lower(msg) == "o") then
+    elseif (string.lower(msg) == "k") then
         SlashCmdList["IlarosNavi"](msg)
     elseif (string.lower(msg) == "v") then
         SlashCmdList["IlarosNavi_VERSION"](msg)

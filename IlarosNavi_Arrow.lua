@@ -78,7 +78,7 @@ wayframe:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 wayframe:SetScript("OnEvent", OnEvent)
 
 wayframe.arrow = wayframe:CreateTexture(nil, "OVERLAY")
-wayframe.arrow:SetTexture("Interface\\Addons\\IlarosNavi\\Images\\Arrow")
+wayframe.arrow:SetTexture("Interface\\Addons\\IlarosNavi\\images\\arrow")
 wayframe.arrow:SetAllPoints()
 
 local active_point, arrive_distance, showDownArrow, point_title
@@ -136,7 +136,7 @@ local function OnUpdate(self, elapsed)
 		if not showDownArrow then
 			arrow:SetHeight(70)
 			arrow:SetWidth(53)
-			arrow:SetTexture("Interface\\AddOns\\IlarosNavi\\Images\\Arrow-UP")
+			arrow:SetTexture("Interface\\AddOns\\IlarosNavi\\images\\arrow-up")
 			arrow:SetVertexColor(unpack(IlarosNavi.db.profile.arrow.goodcolor))
 			showDownArrow = true
 		end
@@ -159,7 +159,7 @@ local function OnUpdate(self, elapsed)
 		if showDownArrow then
 			arrow:SetHeight(56)
 			arrow:SetWidth(42)
-			arrow:SetTexture("Interface\\AddOns\\IlarosNavi\\Images\\Arrow")
+			arrow:SetTexture("Interface\\AddOns\\IlarosNavi\\images\\arrow")
 			showDownArrow = false
 		end
 
@@ -384,7 +384,7 @@ local function wayframe_OnEvent(self, event, arg1, ...)
 			-- Create a data feed for coordinates
 			local feed_crazy = ldb:NewDataObject("IlarosNavi_CrazyArrow", {
 				type = "data source",
-				icon = "Interface\\Addons\\IlarosNavi\\Images\\Arrow",
+				icon = "Interface\\Addons\\IlarosNavi\\images\\arrow",
 				text = "Crazy",
 				iconR = 1,
 				iconG = 1,
